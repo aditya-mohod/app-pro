@@ -84,9 +84,9 @@ stage('Terraform Init') {
                 cat > backend.tf <<EOF
                 terraform {
                   backend "s3" {
-                    bucket         = "terraform-state-bucket-cbz-kharadi-04"
+                    bucket         = "terraform-state-bucket-cbz-kharadi-09"
                     key            = "global/${ENVIRONMENT}/terraform-global.tfstate"
-                    region         = "eu-west-1"
+                    region         = "us-east-1"
                     encrypt        = true
                     dynamodb_table = "terraform-state-lock"
                     use_lockfile   = true
