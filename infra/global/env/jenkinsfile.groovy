@@ -22,7 +22,7 @@ pipeline {
 
         stage('PULL') {
             steps {
-                git branch: 'dev', url: 'https://github.com/jambhulkarcloudblitz-alt/app-pro.git'
+                git branch: 'dev', url: 'https://github.com/aditya-mohod/app-pro.git'
             }
         }
 
