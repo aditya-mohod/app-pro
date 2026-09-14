@@ -3,7 +3,7 @@
 variable "aws_region" {
   description = "AWS region for the backend infrastructure"
   type        = string
-  default     = "us-west-2"
+  default     = "us-west-1"
 }
 
 variable "state_bucket_name" {
