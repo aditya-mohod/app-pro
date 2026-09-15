@@ -387,7 +387,7 @@ pipeline {
         // Get Terraform code from GitHub
         stage('PULL') {
             steps {
-                git branch: 'dev', url: 'https://github.com/jambhulkarcloudblitz-alt/app-pro.git'
+                git branch: 'dev', url: 'https://github.com/aditya-mohod/app-pro.git'
             }
         }
 
@@ -409,7 +409,7 @@ pipeline {
                           '  backend "s3" {' \\
                           '    bucket       = "terraform-state-bucket-cbz-kharadi-04"' \\
                           '    key          = "backend/${ENVIRONMENT}/terraform-global.tfstate"' \\
-                          '    region       = "eu-west-1"' \\
+                          '    region       = "us-west-1"' \\
                           '    encrypt      = true' \\
                           '    use_lockfile = true' \\
                           '  }' \\
