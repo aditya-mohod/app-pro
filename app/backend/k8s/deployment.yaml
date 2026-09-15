@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: student-app-container
-          image: 725166342186.dkr.ecr.eu-north-1.amazonaws.com/easy-backend
+          image: 725166342186.dkr.ecr.us-west-1.amazonaws.com/easy-backend
           ports:
             - containerPort: 8080
           resources:
