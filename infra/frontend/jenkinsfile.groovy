@@ -25,7 +25,7 @@ pipeline {
     }
 
     environment {
-        AWS_DEFAULT_REGION = 'eu-west-1'
+        AWS_DEFAULT_REGION = 'us-west-1'
     }
 
     stages {
