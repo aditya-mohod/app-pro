@@ -8,7 +8,7 @@ variable "aws_region" {
 variable "domain_name" {
   description = "Domain name to use as the S3 bucket name"
   type        = string
-  default = "terraform-state-bucket-cbz-kharadi-09"
+  default = "terraform-state-bucket-cbz-kharadi-10"
 }
 
 
