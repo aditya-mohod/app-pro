@@ -57,9 +57,9 @@ pipeline {
 
             
                         aws ecr get-login-password --region us-west-1 | 
-                        docker login --username AWS --password-stdin 725166342186.dkr.ecr.eu-north-1.amazonaws.com
+                        docker login --username AWS --password-stdin 725166342186.dkr.ecr.us-west-1.amazonaws.com
 
-                        docker push 725166342186.dkr.ecr.eu-north-1.amazonaws.com/easy-backend
+                        docker push 725166342186.dkr.ecr.us-west-1.amazonaws.com/easy-backend
                     '''
                 }
             }
