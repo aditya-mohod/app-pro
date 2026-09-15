@@ -7,7 +7,7 @@
 
 //         choice(
 //             name: 'ENVIRONMENT',
-//             choices: ['dev', 'stage', 'prod'],
+//             choices: ['dev', 'stage', 'pr`od'],
 //             description: 'Target environment for deployment'
 //         )
 
@@ -25,7 +25,7 @@
 //     }
 
 //     environment {
-//         AWS_DEFAULT_REGION = 'eu-west-1'
+//         AWS_DEFAULT_REGION = 'us-west-1'
 //     }
 
 //     stages {
@@ -59,7 +59,7 @@
 
 //         stage('PULL') {
 //             steps {
-//                 git branch: 'dev', url: 'https://github.com/jambhulkarcloudblitz-alt/app-pro.git'
+//                 git branch: 'dev', url: 'https://github.com/aditya-mohod/app-pro.git'
 //             }
 //         }
 
@@ -93,9 +93,9 @@
 //         //                 cat > backend.tf << EOF
 //         //             terraform {
 //         //             backend "s3" {
-//         //                 bucket         = "terraform-state-bucket-cbz-kharadi-4"
+//         //                 bucket         = "terraform-state-bucket-cbz-kharadi-09"
 //         //                 key            = "backend/${params.ENVIRONMENT}/terraform-global.tfstate"
-//         //                 region         = "eu-west-1"
+//         //                 region         = "us-west-1"
 //         //                 encrypt        = true
 //         //                 dynamodb_table = "terraform-state-lock"
 //         //                 use_lockfile   = true
@@ -126,9 +126,9 @@
 //                 cat > backend.tf <<EOF
 //                 terraform {
 //                   backend "s3" {
-//                     bucket         = "terraform-state-bucket-cbz-kharadi-4"
+//                     bucket         = "terraform-state-bucket-cbz-kharadi-09"
 //                     key            = "backend/${ENVIRONMENT}/terraform-global.tfstate"
-//                     region         = "eu-west-1"
+//                     region         = "us-west-1"
 //                     encrypt        = true
 //                     dynamodb_table = "terraform-state-lock"
 //                     use_lockfile   = true
