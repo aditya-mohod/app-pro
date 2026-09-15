@@ -22,10 +22,10 @@ pipeline {
     }
 
     environment {
-        AWS_DEFAULT_REGION = 'us-east-1'
+        AWS_DEFAULT_REGION = 'us-west-1'
 
         TF_STATE_BUCKET = 'terraform-state-bucket-cbz-kharadi-09'
-        TF_STATE_REGION = 'us-east-1'
+        TF_STATE_REGION = 'us-west-1'
     }
 
     stages {
@@ -71,7 +71,7 @@ terraform {
   backend "s3" {
     bucket         = 'terraform-state-bucket-cbz-kharadi-09'
     key            = "global/${params.ENVIRONMENT}/terraform-global.tfstate"
-    region         = "us-east-1"
+    region         = "us-west-1"
     encrypt        = true
     dynamodb_table = "terraform-state-lock"
     use_lockfile   = true
